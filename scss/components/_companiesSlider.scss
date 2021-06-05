@@ -1,0 +1,53 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.companies {
+  padding: 5rem 0;
+
+  @include responsive(sm) {
+    padding: 2rem;
+  }
+
+  &__content {
+    @include sectionSpacing;
+    @include maxWidthMd;
+  }
+
+  .glide__track {
+    margin: 0 4rem;
+
+    @include responsive(md) {
+      margin: 0 2rem;
+    }
+
+    @include responsive(sm) {
+      margin: 0 1rem;
+    }
+  }
+
+  .glide__slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      cursor: grab;
+    }
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  &__logo {
+    width: 15rem;
+
+    @include responsive(md) {
+      width: 12rem;
+    }
+
+    @include responsive(sm) {
+      width: 10rem;
+    }
+  }
+}

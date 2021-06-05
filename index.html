@@ -14,6 +14,11 @@
     />
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- glide.js -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
     <link rel="shortcut icon" href="./images/favicon/koala.ico" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Frontend Mentor Clipboard Landing Page</title>
@@ -166,45 +171,51 @@
       <!-- companies -->
       <section class="companies">
         <div class="companies__content">
-          <!-- single company -->
-          <div class="companies__company">
-            <img
-              src="./images/logo-google.png"
-              alt="google logo"
-              class="companies__logo"
-            />
-          </div>
-          <!-- single company -->
-          <div class="companies__company">
-            <img
-              src="./images/logo-ibm.png"
-              alt="ibm logo"
-              class="companies__logo"
-            />
-          </div>
-          <!-- single company -->
-          <div class="companies__company">
-            <img
-              src="./images/logo-microsoft.png"
-              alt="microsoft logo"
-              class="companies__logo"
-            />
-          </div>
-          <!-- single company -->
-          <div class="companies__company">
-            <img
-              src="./images/logo-hp.png"
-              alt="hewlett packard enterprise logo"
-              class="companies__logo"
-            />
-          </div>
-          <!-- single company -->
-          <div class="companies__company">
-            <img
-              src="./images/logo-vector-graphics.png"
-              alt="vector graphics logo"
-              class="companies__logo"
-            />
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <!-- single company -->
+                <li class="glide__slide companies__company">
+                  <img
+                    src="./images/logo-google.png"
+                    alt="google logo"
+                    class="companies__logo"
+                  />
+                </li>
+                <!-- single company -->
+                <li class="glide__slide companies__company">
+                  <img
+                    src="./images/logo-ibm.png"
+                    alt="ibm logo"
+                    class="companies__logo"
+                  />
+                </li>
+                <!-- single company -->
+                <li class="glide__slide companies__company">
+                  <img
+                    src="./images/logo-microsoft.png"
+                    alt="microsoft logo"
+                    class="companies__logo"
+                  />
+                </li>
+                <!-- single company -->
+                <li class="glide__slide companies__company">
+                  <img
+                    src="./images/logo-hp.png"
+                    alt="hewlett packard enterprise logo"
+                    class="companies__logo"
+                  />
+                </li>
+                <!-- single company -->
+                <li class="glide__slide companies__company">
+                  <img
+                    src="./images/logo-vector-graphics.png"
+                    alt="vector graphics logo"
+                    class="companies__logo"
+                  />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -299,6 +310,9 @@
       />
     </footer>
 
+    <!-- glide.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> -->
+    <script src="./node_modules/@glidejs/glide/dist/glide.js"></script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
