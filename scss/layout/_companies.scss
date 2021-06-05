@@ -1,0 +1,23 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.companies {
+  padding: 10rem 0;
+
+  &__content {
+    @include sectionSpacing;
+    @include maxWidthLg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__company {
+    margin: 1.5rem 1rem;
+  }
+
+  &__logo {
+    width: 15rem;
+  }
+}
