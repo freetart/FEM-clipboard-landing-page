@@ -10,8 +10,14 @@
   outline: 0;
   margin: 0 0.5rem;
   display: inline-block;
+  text-align: center;
   box-shadow: $boxshadow;
   transition: $mainTransition;
+
+  @include responsive(sm) {
+    width: 100%;
+    margin: 1rem 0;
+  }
 
   &--primary {
     background-color: color(strongCyan);

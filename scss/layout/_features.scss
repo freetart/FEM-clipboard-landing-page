@@ -9,11 +9,19 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 5rem;
-    padding: 10rem 0;
+    padding: 10rem 2rem;
+
+    @include responsive(md) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__img {
     transform: translateX(-30%) scale(1.4);
+
+    @include responsive(md) {
+      transform: translateX(0) scale(1);
+    }
   }
 
   &__feature {
@@ -24,10 +32,18 @@
     @include headingStyles;
     font-size: size(lg);
     padding-bottom: 1rem;
+
+    @include responsive(md) {
+      text-align: center;
+    }
   }
 
   &__desc {
     @include textStyles;
     font-size: size(sm);
+
+    @include responsive(md) {
+      text-align: center;
+    }
   }
 }

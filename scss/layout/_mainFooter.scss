@@ -11,6 +11,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @include responsive(md) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 
   &__img {
@@ -18,15 +25,21 @@
   }
 
   &__list {
-    // display: flex;
-    // align-items: center;
-    // flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @include responsive(md) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__item {
     margin: 0.8rem 2rem;
+
+    @include responsive(md) {
+      margin: 0.8rem 0;
+    }
   }
 
   &__link {
@@ -46,6 +59,10 @@
     color: color(darkGrayishBlue);
     transition: $mainTransition;
     margin: 1rem;
+
+    @include responsive(md) {
+      margin: 0 1.5rem 0 0;
+    }
 
     &:hover,
     &:focus {

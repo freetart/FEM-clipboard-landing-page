@@ -2,7 +2,11 @@
 @use "../abstracts/abstracts" as *;
 
 .companies {
-  padding: 8rem 0;
+  padding: 5rem 0;
+
+  @include responsive(sm) {
+    padding: 2rem;
+  }
 
   &__content {
     @include sectionSpacing;
@@ -11,10 +15,15 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 auto;
+
+    @include responsive(sm) {
+      justify-content: center;
+    }
   }
 
   &__company {
-    margin: 1.5rem 1rem;
+    margin: 2rem 2rem;
   }
 
   &__logo {
