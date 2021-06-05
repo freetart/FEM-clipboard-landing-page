@@ -1,0 +1,11 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.cta {
+  @include sectionSpacing;
+
+  &__content {
+    @include maxWidthLg;
+    @include flexCenter;
+  }
+}
