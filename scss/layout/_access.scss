@@ -1,0 +1,9 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.access {
+  &__content {
+    @include sectionSpacing;
+    @include maxWidthSm;
+  }
+}
