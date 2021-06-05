@@ -1,0 +1,36 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.workflow {
+  &__content {
+    @include sectionSpacing;
+    @include maxWidthLg;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    gap: 5rem;
+  }
+
+  &__col {
+    text-align: center;
+  }
+
+  &__col:nth-child(3) {
+    align-self: center;
+  }
+
+  &__icon {
+    width: 8rem;
+  }
+
+  &__heading {
+    @include headingStyles;
+    font-size: size(lg);
+    padding: 2rem 0;
+  }
+
+  &__desc {
+    @include textStyles;
+    font-size: size(sm);
+  }
+}
