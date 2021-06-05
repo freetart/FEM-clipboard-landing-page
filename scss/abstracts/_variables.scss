@@ -1,0 +1,31 @@
+// colors
+$colors: (
+  // shades
+  black: hsl(0, 0%, 0%),
+  white: hsl(0, 0%, 100%),
+  // primary
+  strongCyan: hsl(171, 66%, 44%),
+  lightBlue: hsl(233, 100%, 69%),
+  // neutral
+  darkGrayishBlue: hsl(210, 10%, 33%),
+  grayishBlue: hsl(201, 11%, 66%)
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+// font sizes
+$font-sizes: (
+  xxl: 3.5rem,
+  xl: 3rem,
+  lg: 2.5rem,
+  md: 2rem,
+  sm: 1.8rem,
+  xs: 1.6rem,
+  xxs: 1.3rem,
+);
+
+@function size($size) {
+  @return map-get($font-sizes, $size);
+}
