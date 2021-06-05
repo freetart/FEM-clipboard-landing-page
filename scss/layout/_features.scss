@@ -1,0 +1,33 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.features {
+  &__content {
+    @include sectionSpacing;
+    @include maxWidthLg;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+    padding: 15rem 0;
+  }
+
+  &__img {
+    transform: translateX(-30%) scale(1.4);
+  }
+
+  &__feature {
+    margin: 10rem 0;
+  }
+
+  &__heading {
+    @include headingStyles;
+    font-size: size(lg);
+    padding-bottom: 1rem;
+  }
+
+  &__desc {
+    @include textStyles;
+    font-size: size(sm);
+  }
+}

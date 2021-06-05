@@ -1,0 +1,23 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.section-title {
+  @include sectionSpacing;
+  @include flexCenter;
+  @include maxWidthLg;
+  flex-direction: column;
+  text-align: center;
+
+  &__heading {
+    @include headingStyles;
+    font-size: size(xxl);
+  }
+
+  &__desc {
+    @include textStyles;
+    font-size: size(md);
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+}
