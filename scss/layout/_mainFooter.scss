@@ -1,0 +1,55 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.main-footer {
+  background-color: #f5f4f4;
+  margin-top: 8rem;
+
+  &__content {
+    padding: 2rem;
+    @include maxWidthLg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 5rem;
+  }
+
+  &__list {
+    // display: flex;
+    // align-items: center;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    margin: 0.8rem 2rem;
+  }
+
+  &__link {
+    @include textStyles;
+    font-size: size(sm);
+    color: color(darkGrayishBlue);
+    transition: $mainTransition;
+
+    &:hover,
+    &:focus {
+      color: color(strongCyan);
+    }
+  }
+
+  &__social {
+    font-size: size(lg);
+    color: color(darkGrayishBlue);
+    transition: $mainTransition;
+    margin: 1rem;
+
+    &:hover,
+    &:focus {
+      color: color(strongCyan);
+    }
+  }
+}
