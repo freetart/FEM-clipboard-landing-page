@@ -1,0 +1,29 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.nav {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  z-index: 10;
+
+  @include responsive(lg) {
+    display: none;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    @include headingStyles;
+    font-size: size(sm);
+    margin: 0 2rem;
+    transition: $mainTransition;
+
+    &:hover,
+    &:focus {
+      color: color(strongCyan);
+    }
+  }
+}

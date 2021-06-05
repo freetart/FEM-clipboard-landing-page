@@ -5,6 +5,7 @@
   background: linear-gradient(30deg, rgba(255, 255, 255, 0.8), transparent),
     rgba(255, 255, 255, 0.5) url(../images/bg-header-desktop.png) center center /
       cover no-repeat;
+  position: relative;
 
   &__content {
     @include maxWidthLg;

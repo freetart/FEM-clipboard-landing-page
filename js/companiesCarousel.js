@@ -7,7 +7,7 @@ const companiesCarousel = () => {
       980: {
         perView: 3,
       },
-      400: {
+      500: {
         perView: 2,
       },
     },
