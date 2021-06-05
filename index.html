@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -11,6 +12,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./images/favicon/koala.ico" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Frontend Mentor Clipboard Landing Page</title>
@@ -29,7 +32,7 @@
 
     <!-- hero -->
     <header class="hero">
-      <div class="hero__content">
+      <div class="hero__content" data-aos="fade-up">
         <img src="./images/logo.svg" alt="clipboard logo" class="hero__logo" />
         <h1 class="hero__heading">A history of everything you copy</h1>
         <p class="hero__desc">
@@ -56,7 +59,7 @@
           </p>
         </div>
         <div class="features__content">
-          <div class="features__img-container">
+          <div class="features__img-container" data-aos="fade-right">
             <img
               src="./images/image-computer.png"
               alt="image of computer with clipboard app"
@@ -101,7 +104,7 @@
             your Clipboard snippets in a few simple clicks.
           </p>
         </div>
-        <div class="access__content">
+        <div class="access__content" data-aos="fade-left">
           <img
             src="./images/image-devices.png"
             alt="image of devices with clipboard app"
@@ -121,7 +124,7 @@
         </div>
         <div class="workflow__content">
           <!-- single col -->
-          <div class="workflow__col">
+          <div class="workflow__col" data-aos="fade-down">
             <img
               src="./images/icon-blacklist.svg"
               alt="blacklist icon"
@@ -134,7 +137,7 @@
             </p>
           </div>
           <!-- single col -->
-          <div class="workflow__col">
+          <div class="workflow__col" data-aos="fade-down" data-aos-delay="200">
             <img
               src="./images/icon-text.svg"
               alt="text icon"
@@ -146,7 +149,7 @@
             </p>
           </div>
           <!-- single col -->
-          <div class="workflow__col">
+          <div class="workflow__col" data-aos="fade-down" data-aos-delay="400">
             <img
               src="./images/icon-preview.svg"
               alt="preview icon"
@@ -295,6 +298,13 @@
         class="footer__logo"
       />
     </footer>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 100, duration: 1000, once: true });
+    </script>
+    <!-- js -->
     <script src="./js/main.js"></script>
   </body>
 </html>
