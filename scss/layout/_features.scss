@@ -2,6 +2,8 @@
 @use "../abstracts/abstracts" as *;
 
 .features {
+  overflow-x: hidden;
+
   &__content {
     @include sectionSpacing;
     @include maxWidthLg;
