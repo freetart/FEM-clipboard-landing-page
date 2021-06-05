@@ -1,0 +1,35 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.btn {
+  padding: 1.5rem 2rem;
+  font-size: size(md);
+  color: color(white);
+  border-radius: $btnRadius;
+  border: 0;
+  outline: 0;
+  margin: 0 0.5rem;
+  display: inline-block;
+  box-shadow: $boxshadow;
+  transition: $mainTransition;
+
+  &--primary {
+    background-color: color(strongCyan);
+
+    &:hover,
+    &:focus {
+      background-color: lighten(color(strongCyan), 5%);
+      box-shadow: $boxshadowActive;
+    }
+  }
+
+  &--secondary {
+    background-color: color(lightBlue);
+
+    &:hover,
+    &:focus {
+      background-color: lighten(color(lightBlue), 5%);
+      box-shadow: $boxshadowActive;
+    }
+  }
+}

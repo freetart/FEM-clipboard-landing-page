@@ -1,0 +1,36 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.hero {
+  background: linear-gradient(30deg, rgba(255, 255, 255, 0.8), transparent),
+    rgba(255, 255, 255, 0.5) url(../images/bg-header-desktop.png) center center /
+      cover no-repeat;
+
+  &__content {
+    @include maxWidthLg;
+    @include sectionSpacing;
+    @include flexCenter;
+    flex-direction: column;
+    text-align: center;
+    height: 60vh;
+  }
+
+  &__logo {
+    width: 10rem;
+    padding-bottom: 1rem;
+  }
+
+  &__heading {
+    @include headingStyles;
+    font-size: size(xxl) + 1rem;
+    padding: 2rem 0;
+  }
+
+  &__desc {
+    @include textStyles;
+    font-size: size(md);
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 4rem;
+  }
+}
