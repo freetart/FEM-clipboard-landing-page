@@ -7,6 +7,7 @@ responsive landing page challenge for frontend mentor
 - hamburger menu
 - preloader
 - glide.js carousel
+- aos.js
 
 #### Technologies used
 
